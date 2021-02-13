@@ -1,0 +1,61 @@
+<!-- HeaderComponent to be displayed as part of AppComponent -->
+<app-header></app-header>
+
+<!-- Label to display any error messages -->
+<label class="error-message">{{ errMessage }}</label>
+
+<!-- To add notes -->
+<div class="container">
+  <mat-accordion class="example-headers-align" multi >
+    <mat-expansion-panel  class="bg-secondary">
+      <mat-expansion-panel-header >
+        <mat-panel-title >
+          Take a note
+        </mat-panel-title>
+        <mat-panel-description>
+          Fill up Details
+          <!-- <mat-icon>account_circle</mat-icon> -->
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <div class="form-field">
+        <mat-form-field>
+         <mat-label>Title</mat-label>
+           <input matInput  name="title" type="text" [(ngModel)]="noteObj.title" 
+            placeholder="Enter the title">
+        </mat-form-field>  
+        <mat-form-field>
+         <mat-label>Text</mat-label>
+          <textarea matInput name="text" [(ngModel)]="noteObj.text" 
+           placeholder="Enter the description"></textarea>
+        </mat-form-field>
+      </div>
+      <mat-action-row>
+        <button mat-raised-button color="basic" (click)="addNote()">Done</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+  </mat-accordion>
+ 
+  <div class="note-card">
+    <mat-card class="example-card bg-secondary" *ngFor="let note of noteArray">
+      <mat-card-header>
+        <mat-card-title>{{note.title}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="search-form">
+        {{note.text}}
+      </mat-card-content>
+    </mat-card>
+  </div> 
+</div>
+
+
+
+
+
+
+<!-- Load and display the collection of notes from server as Material Cards with card title set to note title and card content set to note text  -->
+
+
+
+
+

@@ -1,0 +1,66 @@
+.example-action-buttons {
+    padding-bottom: 20px;
+}
+  
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+    flex-basis: 0;
+}
+  
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.example-headers-align .mat-form-field + .mat-form-field {
+    margin: 8px;
+}
+
+.example-headers-align{
+      display: flex ;
+      flex-direction: row;
+      align-items: baseline;
+}
+
+.container{
+    display: flex ;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding :15px;
+    background-color:rgb(245, 241, 237);
+    max-width: 1280px;
+      
+}
+
+.form-field{
+    display: grid ;
+    grid-template-columns: auto auto;
+    align-items: center;
+    grid-gap: 25px;
+}
+
+.note-card{
+    display: grid ;
+    grid-template-columns: auto auto;
+    align-items: center;
+    grid-gap: 25px;
+    min-height: 100px;
+    min-width: 350px;
+}
+
+.mat-expansion-panel-header {
+    font-size: 20px; 
+}
+.mat-card-title {
+    font-size: 20px;
+}
+
+.bg-secondary{
+  background-color: antiquewhite;
+}
+
+
+
+

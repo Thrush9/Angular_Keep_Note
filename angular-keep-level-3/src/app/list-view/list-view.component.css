@@ -1,0 +1,11 @@
+.keep-c-list-container{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    padding : 10px;
+    margin : 10px
+}
+
+label {
+    margin: 3px;
+}

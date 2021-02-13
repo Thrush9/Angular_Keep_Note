@@ -1,0 +1,11 @@
+<div class="container-fluid">
+<!-- NoteTakerComponent to be displayed as part of DashboardComponent -->
+<app-note-taker></app-note-taker>
+
+<!-- Following router outlet displays the NoteViewComponent or ListViewComponent based on primary route -->
+<div class="cards">
+<router-outlet></router-outlet>
+</div>
+</div>
+<!-- Following named router outlet displays the EditViewComponent based on the secondary route -->
+<router-outlet name="noteEditOutlet"></router-outlet>

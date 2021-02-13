@@ -1,0 +1,9 @@
+.example-card{
+    background-color: rgb(104, 183, 248)
+}
+
+.mat-card{
+    min-height: 70px;
+    min-width: 200px;
+    margin : 5px;
+}

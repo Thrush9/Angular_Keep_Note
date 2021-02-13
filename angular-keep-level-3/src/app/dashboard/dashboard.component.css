@@ -1,0 +1,8 @@
+.container-fluid{
+    display: grid ;
+    grid-template-columns: auto auto;
+    align-items: center;
+    grid-gap: 25px;
+    background-color: rgb(165, 192, 243);
+    min-height: 400px;
+}

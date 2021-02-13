@@ -1,0 +1,7 @@
+.keep-c-note-container{
+    display: grid ;
+    grid-template-columns: auto auto;
+    align-items: center;
+    grid-gap: 25px;
+    padding : 15px;
+}
